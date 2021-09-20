@@ -5,3 +5,9 @@ The goal is to do a front-end only React app for my personal website. Must be in
 ## Technologies
 
 This will be a simple front-end only React app, I'm trying to focus on getting better at React and at design to it definitely will be a challenge.
+
+I'm using:
+
+- React Router
+- React Scroll
+- Styled Components
