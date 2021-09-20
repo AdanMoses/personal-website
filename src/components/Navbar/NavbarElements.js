@@ -58,7 +58,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  align-itemsL center;
+  align-items: center;
   list-style: none;
   text-align: center;
   margin-right: -22px;
@@ -77,7 +77,7 @@ export const NavLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%
+  height: 100%;
   cursor: pointer;
 
   &.active {
