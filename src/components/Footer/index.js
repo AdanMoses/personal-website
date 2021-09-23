@@ -1,4 +1,5 @@
 import React from "react";
+import {FaTwitter, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {
   FooterContainer,
   FooterWrap,
@@ -8,7 +9,14 @@ import {
   FooterLinkTitle,
   FooterLinkR,
   FooterLinkS,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
 } from "./FooterElements";
+
 
 const Footer = () => {
   return (
@@ -46,7 +54,7 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/'>
-              adan moses
+              a.m.
             </SocialLogo>
             <WebsiteRights>
               adan moses © {new Date().getFullYear()} All rights reserved.
@@ -56,10 +64,10 @@ const Footer = () => {
                 <FaTwitter />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="GitHub">
-                <FaGitHub />
+                <FaGithub />
               </SocialIconLink>
               <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-                <FaLinkedIn />
+                <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
