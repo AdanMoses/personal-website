@@ -34,7 +34,7 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
   color: #fff;
-`
+`;
 
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(5, 60px);
   }
-`
+`;
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
@@ -60,7 +60,7 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #6C63FF;
+    color: #6c63ff;
     transition: 0.2s ease-in-out;
   }
-`
+`;
