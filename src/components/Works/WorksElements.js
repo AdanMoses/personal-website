@@ -36,8 +36,10 @@ export const WorksWrapper = styled.div`
   }
 `;
 
-export const WorksCard = styled.div`
+export const WorksCard = styled.a`
   background: #fff;
+  text-decoration: none;
+  color: #0d0d0d;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
