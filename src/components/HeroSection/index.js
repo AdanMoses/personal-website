@@ -29,7 +29,16 @@ const HeroSection = () => {
         <HeroH1>Full-Stack Developer</HeroH1>
         <HeroP>Team me up Scotty!</HeroP>
         <HeroBtnWrapper>
-          <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to="contact"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact={true}
+            offset={-80}
+          >
             Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

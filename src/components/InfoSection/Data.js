@@ -5,9 +5,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'About Me',
   headline: 'Full-Stack Software Engineer with a background in Sound for Film and TV',
-  description: `Experienced Sound Designer pivoting into a career in Software Engineering. I bring across a slew of technical skills and an ability to quickly learn new tech tools and processes. I am excited about the opportunity to bring my time management and people skills into the dev industry and to work on projects in the not for profit and government spaces.
-
-  Having solid experience in all kinds of interesting projects in the sound space, in 5 years time I hope to have similar experience in the Software Engineering space, a range of exciting and interesting projects and a network of amazing colleagues`,
+  description: `Experienced Sound Designer pivoting into a career in Software Engineering. I bring across a slew of technical skills and an ability to quickly learn new tech tools and processes. I am excited about the opportunity to bring my time management and people skills into the dev industry and to work on projects in the not for profit and government spaces.`,
   buttonLabel: 'More About Me',
   buttonTo: 'contact',
   imgStart: false,
