@@ -61,7 +61,7 @@ export const homeObjFour = {
   headline: "Did I mentioned I've won awards?",
   description: "It's only best Sound Editor for a short-film, but still counts right?!",
   buttonLabel: 'Resume',
-  buttonTo: '/resume',
+  buttonTo: 'resume',
   imgStart: true,
   img: require('../../images/skills.svg').default,
   alt: 'person',
