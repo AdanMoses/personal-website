@@ -33,3 +33,7 @@ There's a few features that I wasn't able to complete in time but will get done 
 - Displaying my resume as a drop-down menu 
 - Displaying the contact me form as a drop-down menu
 - Potentially adding some Parallax effect to the SVGs
+
+## TODO
+
+Check buttons classes, need to run function for dropdown.
