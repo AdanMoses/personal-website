@@ -36,4 +36,4 @@ There's a few features that I wasn't able to complete in time but will get done 
 
 ## TODO
 
-Check buttons classes, need to run function for dropdown.
+Check buttons classes, need to click to run function for dropdown
