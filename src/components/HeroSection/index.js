@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
+// import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElement";
 import {
   HeroContainer,
@@ -23,11 +23,21 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
+        <VideoBg
+          autoPlay
+          loop
+          muted
+          src={
+            "https://storage.googleapis.com/adan-moses-personal-website/video.mp4"
+          }
+          type="video/mp4"
+        ></VideoBg>
       </HeroBg>
       <HeroContent>
         <HeroH1>Full-Stack Developer</HeroH1>
-        <HeroP>Recent General Assembly Graduate looking to join a supportive team.</HeroP>
+        <HeroP>
+          Recent General Assembly Graduate looking to join a supportive team.
+        </HeroP>
         <HeroBtnWrapper>
           <Button
             to="contact"
