@@ -36,7 +36,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Full-Stack Developer</HeroH1>
         <HeroP>
-          Recent General Assembly Graduate looking to join a supportive team.
+          With a passion for CSS, scalable code, and good coding practices.
         </HeroP>
         <HeroBtnWrapper>
           <Button
