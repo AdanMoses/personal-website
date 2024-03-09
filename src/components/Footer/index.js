@@ -30,18 +30,18 @@ const Footer = () => {
               {/* <FooterLinkR to='/'>Github</FooterLinkR>
               <FooterLinkR to='/'>Twitter</FooterLinkR> */}
             </FooterLinkItems>
-            <FooterLinkItems>
+            {/* <FooterLinkItems>
               <FooterLinkTitle>Don't Click These Please</FooterLinkTitle>
-              {/* <FooterLinkR to='/'>They Are Just</FooterLinkR>
-              <FooterLinkR to='/'>For Display</FooterLinkR> */}
-            </FooterLinkItems>
+              <FooterLinkR to='/'>They Are Just</FooterLinkR>
+              <FooterLinkR to='/'>For Display</FooterLinkR>
+            </FooterLinkItems> */}
           </FooterLinksWrapper>
           <FooterLinksWrapper>
-            <FooterLinkItems>
+            {/* <FooterLinkItems>
               <FooterLinkTitle>Danger Zone</FooterLinkTitle>
-              {/* <FooterLinkR to='/'>These Also Make</FooterLinkR>
-              <FooterLinkR to='/'>Everything Look Professional</FooterLinkR> */}
-            </FooterLinkItems>
+              <FooterLinkR to='/'>These Also Make</FooterLinkR>
+              <FooterLinkR to='/'>Everything Look Professional</FooterLinkR>
+            </FooterLinkItems> */}
             <FooterLinkItems>
               <FooterLinkTitle>Site Map</FooterLinkTitle>
               {/* <FooterLinkS to='about'>About Me</FooterLinkS>
@@ -61,9 +61,9 @@ const Footer = () => {
               adan moses © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="https://twitter.com/adanequis" target="_blank" aria-label="Twitter">
+              {/* <SocialIconLink href="https://twitter.com/adanequis" target="_blank" aria-label="Twitter">
                 <FaTwitter />
-              </SocialIconLink>
+              </SocialIconLink> */}
               <SocialIconLink href="https://github.com/AdanMoses" target="_blank" aria-label="GitHub">
                 <FaGithub />
               </SocialIconLink>
