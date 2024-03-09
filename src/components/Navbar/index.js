@@ -5,11 +5,9 @@ import { IconContext } from "react-icons/lib";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -36,15 +34,15 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
+            {/* <NavLogo to="/" onClick={toggleHome}>
               adan moses
-            </NavLogo>
+            </NavLogo> */}
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks
+                {/* <NavLinks
                   to="about"
                   smooth={true}
                   duration={500}
@@ -53,10 +51,10 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   About Me
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
               <NavItem>
-                <NavLinks
+                {/* <NavLinks
                   to="skills"
                   smooth={true}
                   duration={500}
@@ -65,10 +63,10 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Skills
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
               <NavItem>
-                <NavLinks
+                {/* <NavLinks
                   to="work"
                   smooth={true}
                   duration={500}
@@ -77,10 +75,10 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   My Work
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
               <NavItem>
-                <NavLinks
+                {/* <NavLinks
                   to="resume"
                   smooth={true}
                   duration={500}
@@ -89,10 +87,10 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Resume
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
               <NavItem>
-                <NavLinks
+                {/* <NavLinks
                   to="contact"
                   smooth={true}
                   duration={500}
@@ -101,7 +99,7 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   Contact
-                </NavLinks>
+                </NavLinks> */}
               </NavItem>
             </NavMenu>
           </NavbarContainer>

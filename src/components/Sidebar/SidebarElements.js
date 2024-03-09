@@ -1,5 +1,4 @@
-// import { Link as LinkR} from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+// import { Link as LinkS } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 
@@ -47,20 +46,20 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLink = styled(LinkS)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  list-style: none;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
+// export const SidebarLink = styled(LinkS)`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 1.5rem;
+//   text-decoration: none;
+//   list-style: none;
+//   transition: 0.2s ease-in-out;
+//   text-decoration: none;
+//   color: #fff;
+//   cursor: pointer;
 
-  &:hover {
-    color: #6c63ff;
-    transition: 0.2s ease-in-out;
-  }
-`;
+//   &:hover {
+//     color: #6c63ff;
+//     transition: 0.2s ease-in-out;
+//   }
+// `;
