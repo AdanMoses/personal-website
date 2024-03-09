@@ -9,6 +9,7 @@ export const homeObjOne = {
   buttonLabel: 'More About Me',
   buttonTo: 'contact',
   imgStart: false,
+  // img: require('../../images/team.svg').default,
   img: require('../../images/team.svg').default,
   alt: 'team',
   dark: true,

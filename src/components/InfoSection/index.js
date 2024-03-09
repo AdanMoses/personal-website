@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+import Image from "next/image";
 import {
   InfoContainer,
   InfoWrapper,
@@ -58,7 +59,7 @@ const InfoSection = ({
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Image src={img} alt={alt} width={400} height={400} />
               </ImgWrap>
             </Column2>
           </InfoRow>

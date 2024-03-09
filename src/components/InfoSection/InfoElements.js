@@ -90,6 +90,8 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  display: grid;
+  place-items: center;
 `;
 
 export const Img = styled.img`
