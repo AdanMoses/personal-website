@@ -8,7 +8,6 @@ import { homeObjFive, homeObjFour, homeObjOne, homeObjTwo } from '../src/compone
 import Navbar from '../src/components/Navbar'
 import Sidebar from '../src/components/Sidebar'
 import Works from '../src/components/Works'
-// import "../src/App.css"
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false)
