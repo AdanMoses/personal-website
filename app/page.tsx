@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState} from 'react'
+import {useState} from 'react'
 import Footer from '../src/components/Footer'
 import HeroSection from '../src/components/HeroSection'
 import InfoSection from '../src/components/InfoSection'

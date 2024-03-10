@@ -1,6 +1,6 @@
 import styled from "styled-components";
-// import Link from 'next/link';
-// import { Link as LinkS } from "react-scroll";
+import Link from 'next/link';
+import { Link as animateScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
@@ -29,17 +29,17 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-// export const NavLogo = styled(Link)`
-//   color: #fff;
-//   justify-self: flex-start;
-//   cursor: pointer;
-//   font-size: 1.5rem;
-//   display: flex;
-//   align-items: center;
-//   margin-left: 24px;
-//   font-weight: bold;
-//   text-decoration: none;
-// `;
+export const NavLogo = styled(Link)`
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+`;
 
 export const MobileIcon = styled.div`
   display: none;
@@ -71,20 +71,20 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-// export const NavLinks = styled(LinkS)`
-//   color: #fff;
-//   display: flex;
-//   align-items: center;
-//   text-decoration: none;
-//   padding: 0 1rem;
-//   height: 100%;
-//   cursor: pointer;
+export const NavLinks = styled(animateScroll)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
-//   &.active {
-//     border-bottom: 3px solid #6C63FF;
-//   }
+  &.active {
+    border-bottom: 3px solid #6C63FF;
+  }
 
-//   &:hover {
-//     border-bottom: 3px solid #6C63FF;
-//   }
-// `;
+  &:hover {
+    border-bottom: 3px solid #6C63FF;
+  }
+`;
