@@ -23,10 +23,10 @@ const Works = () => {
           <WorksH2>TicTacToe</WorksH2>
           <WorksP>Fun game written in Vanilla JavaScript</WorksP>
         </WorksCard>
-        <WorksCard href="https://cohousing-australia-website-adanmoses.vercel.app/about" target="_blank">
+        <WorksCard href="https://cohousing-australia-website-adanmoses.vercel.app/" target="_blank">
           <Image src={Icon2} alt="icon for portfolio showcase" width={100} height={100} />
           <WorksH2>CoHousing Australia Website</WorksH2>
-          <WorksP>Website for the Not-for-profit organisation CoHousing Australia</WorksP>
+          <WorksP>Website for the Not-for-profit organisation CoHousing Australia (WIP)</WorksP>
         </WorksCard>
         <WorksCard href="https://codepen.io/adanmoses/pen/XWYarwG" target="_blank">
           <Image src={Icon3} alt="icon for portfolio showcase" width={100} height={100} />
