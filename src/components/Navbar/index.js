@@ -5,11 +5,11 @@ import { IconContext } from "react-icons/lib";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
+  NavLogo,
+  NavLinks
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
+            <NavLogo href="/" onClick={toggleHome}>
               adan moses
             </NavLogo>
             <MobileIcon onClick={toggle}>
@@ -49,7 +49,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   About Me
@@ -61,7 +60,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Skills
@@ -73,7 +71,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   My Work
@@ -85,7 +82,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Resume
@@ -97,7 +93,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Contact

@@ -30,7 +30,7 @@ export const InfoRow = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      imgStart ? `'col2 col2' 'col1 col1'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -60,6 +60,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  padding-left: 2px;
 `;
 
 export const Heading = styled.h1`
@@ -90,10 +91,62 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  display: grid;
+  place-items: center;
+
+  @media screen and (max-width: 768px) {
+    > img {
+      width: 100%;
+    }
+  }
 `;
 
 export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Form = styled.form`
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  
+  > * {
+    padding: 10px;
+  }
+
+  textarea {
+    max-width: 100%;
+    height: 100px;
+  }
+
+  input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  > input[type="submit"] {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  > label {
+    display: flex;
+    flex-direction: column;
+  }
 `;
