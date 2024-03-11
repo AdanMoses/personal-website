@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../ButtonElement";
+import React, { useState } from "react";
+import { Button, ExternalLinkButton } from "../ButtonElement";
 import Image from "next/image";
 import {
   InfoContainer,
@@ -32,7 +32,11 @@ const InfoSection = ({
   dark,
   dark2,
   buttonTo,
+  href,
+  resume,
 }) => {
+  const [showPdf, setShowPdf] = useState(false);
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -44,16 +48,34 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to={buttonTo}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact={true}
-                  offset={-80}
-                  primary={primary ? 1 : 0}
-                  dark={dark ? 1 : 0}
-                  dark2={dark2? 1 : 0}
-                  >{buttonLabel}</Button>
+                  {resume ? (
+                    <ExternalLinkButton
+                      href={href}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                      target="_blank"
+                    >
+                      {buttonLabel}
+                    </ExternalLinkButton>
+                  ) : (
+                    <Button
+                      to={buttonTo}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </Button>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Column1>
