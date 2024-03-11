@@ -15,7 +15,7 @@ import {
 
 const Works = () => {
   return (
-    <WorksContainer id="works" id="work">
+    <WorksContainer id="works">
       <WorksH1>My Work</WorksH1>
       <WorksWrapper>
         <WorksCard href="https://adanmoses.github.io/tictactoe/" target="_blank">
