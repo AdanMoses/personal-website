@@ -13,7 +13,7 @@ export const WorksContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 875px;
   }
 `;
 
@@ -60,6 +60,16 @@ export const WorksIcon = styled.img`
   height: 160px;
   width: 160px;
   margin-bottom: 10px;
+`;
+
+export const TopLine = styled.p`
+  color: #6c63ff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 `;
 export const WorksH1 = styled.h1`
   font-size: 2.5rem;
