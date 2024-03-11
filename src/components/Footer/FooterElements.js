@@ -1,6 +1,6 @@
 import styled from "styled-components";
-// import Link from 'next/link';
-// import { Link as LinkS } from "react-scroll";
+import Link from 'next/link';
+import { Link as animateScroll } from "react-scroll";
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -55,31 +55,31 @@ export const FooterLinkTitle = styled.h1`
   margin-bottom: 16px;
 `;
 
-// export const FooterLink = styled(Link)`
-//   color: #fff;
-//   text-decoration: none;
-//   margin-bottom: 0.5rem;
-//   font-size: 14px;
-//   cursor: pointer;
+export const FooterLink = styled(Link)`
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  cursor: pointer;
 
-//   &:hover {
-//     color: #6c63ff;
-//     transition: 0.3s ease-out;
-//   }
-// `;
+  &:hover {
+    color: #6c63ff;
+    transition: 0.3s ease-out;
+  }
+`;
 
-// export const FooterLinkS = styled(LinkS)`
-//   color: #fff;
-//   text-decoration: none;
-//   margin-bottom: 0.5rem;
-//   font-size: 14px;
-//   cursor: pointer;
+export const FooterLinkS = styled(animateScroll)`
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  cursor: pointer;
 
-//   &:hover {
-//     color: #6c63ff;
-//     transition: 0.3s ease-out;
-//   }
-// `;
+  &:hover {
+    color: #6c63ff;
+    transition: 0.3s ease-out;
+  }
+`;
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
@@ -98,17 +98,17 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
-// export const SocialLogo = styled(Link)`
-//   color: #fff;
-//   justify-self: start;
-//   cursor: pointer;
-//   text-decoration: none;
-//   font-size: 1.5rem;
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 16px;
-//   font-weight: bold;
-// `;
+export const SocialLogo = styled(Link)`
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+`;
 
 export const WebsiteRights = styled.small`
   color: #fff;
