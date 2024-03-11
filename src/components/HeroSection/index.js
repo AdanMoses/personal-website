@@ -46,7 +46,6 @@ const HeroSection = () => {
             smooth={true}
             duration={500}
             spy={true}
-            exact={true}
             offset={-80}
           >
             Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
