@@ -5,6 +5,7 @@ import {
   ClosedIcon,
   SidebarWrapper,
   SidebarMenu,
+  SidebarLink,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -15,7 +16,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          {/* <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink to="about" onClick={toggle}>
             About Me
           </SidebarLink>
           <SidebarLink to="skills" onClick={toggle}>
@@ -29,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
             Contact Me
-          </SidebarLink> */}
+          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
