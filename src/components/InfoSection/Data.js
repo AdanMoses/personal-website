@@ -79,7 +79,7 @@ export const homeObjFive = {
   lightTextDesc: true,
   topLine: 'Contact Me',
   headline: 'Want to get in touch?',
-  description: 'Se habla español',
+  description: 'If you would like to know more about me or just get in touch with me, please feel free to add me on LinkedIn, you can find a link to to on the footer of this page.',
   buttonLabel: 'Contact Me',
   buttonTo: 'contact',
   imgStart: true,
@@ -88,4 +88,6 @@ export const homeObjFive = {
   dark: true,
   primary: true,
   darkText: false,
+  // contactForm: true,
+  noButton: true,
 };

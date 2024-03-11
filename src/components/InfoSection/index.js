@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, ExternalLinkButton } from "../ButtonElement";
+import { Button, ExternalLinkButton, ContactButton, InputButton, CloseButton } from "../ButtonElement";
+import { FaTimesCircle } from "react-icons/fa";
 import Image from "next/image";
 import {
   InfoContainer,
@@ -11,9 +12,10 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  Img,
   ImgWrap,
   BtnWrap,
+  Overlay,
+  Form,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -34,8 +36,63 @@ const InfoSection = ({
   buttonTo,
   href,
   resume,
+  contactForm,
+  noButton,
 }) => {
-  const [showPdf, setShowPdf] = useState(false);
+  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
+  let buttonComponent;
+
+  if (resume) {
+    buttonComponent = (
+      <ExternalLinkButton
+        href={href}
+        smooth={true}
+        duration={500}
+        spy={true}
+        offset={-80}
+        primary={primary ? 1 : 0}
+        dark={dark ? 1 : 0}
+        dark2={dark2 ? 1 : 0}
+        target="_blank"
+      >
+        {buttonLabel}
+      </ExternalLinkButton>
+    );
+  } else if (contactForm) {
+    buttonComponent = (
+      <ContactButton
+        onClick={() => setIsOverlayOpen(true)}
+        smooth={true}
+        duration={500}
+        spy={true}
+        offset={-80}
+        primary={primary ? 1 : 0}
+        dark={dark ? 1 : 0}
+        dark2={dark2 ? 1 : 0}
+      >
+        {buttonLabel}
+      </ContactButton>
+    );
+
+  } else if (noButton) {
+    buttonComponent = null;
+  } else {
+    buttonComponent = (
+      <Button
+        to={buttonTo}
+        smooth={true}
+        duration={500}
+        spy={true}
+        offset={-80}
+        primary={primary ? 1 : 0}
+        dark={dark ? 1 : 0}
+        dark2={dark2 ? 1 : 0}
+      >
+        {buttonLabel}
+      </Button>
+    );
+  }
 
   return (
     <>
@@ -48,34 +105,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  {resume ? (
-                    <ExternalLinkButton
-                      href={href}
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      offset={-80}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 1 : 0}
-                      dark2={dark2 ? 1 : 0}
-                      target="_blank"
-                    >
-                      {buttonLabel}
-                    </ExternalLinkButton>
-                  ) : (
-                    <Button
-                      to={buttonTo}
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      offset={-80}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 1 : 0}
-                      dark2={dark2 ? 1 : 0}
-                    >
-                      {buttonLabel}
-                    </Button>
-                  )}
+                  {buttonComponent}
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -87,6 +117,26 @@ const InfoSection = ({
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
+      {isOverlayOpen && (
+        <Overlay>
+          <CloseButton onClick={() => setIsOverlayOpen(false)}><FaTimesCircle /></CloseButton>
+          <Form>
+            <label>
+              Name:
+              <input type="text" name="name" />
+            </label>
+            <label>
+              Email:
+              <input type="text" name="email" />
+            </label>
+            <label>
+              Message:
+              <textarea name="message" />
+            </label>
+            <InputButton type="submit" value="Submit" />
+          </Form>
+        </Overlay>
+      )}
     </>
   );
 };
