@@ -49,7 +49,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   About Me
@@ -61,7 +60,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Skills
@@ -73,7 +71,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   My Work
@@ -85,7 +82,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Resume
@@ -97,7 +93,6 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact="true"
                   offset={-80}
                 >
                   Contact
