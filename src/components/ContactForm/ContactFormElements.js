@@ -15,11 +15,20 @@ export const Form = styled.form`
   textarea {
     max-width: 100%;
     height: 100px;
+    resize: none;
+    :focus {
+      outline: none;
+      border-color: #6c63ff;
+    }
   }
 
   input {
     margin-top: 5px;
     margin-bottom: 5px;
+    :focus {
+      outline: none;
+      border-color: #6c63ff;
+    }
   }
   
   > input[type="submit"] {
@@ -30,5 +39,9 @@ export const Form = styled.form`
   > label {
     display: flex;
     flex-direction: column;
+  }
+
+  span {
+    color: red;
   }
 `;

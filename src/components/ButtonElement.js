@@ -87,7 +87,7 @@ export const InputButton = styled.input`
 
 export const CloseButton = styled.button`
   position: relative;
-  top: -10rem;
+  top: -12rem;
   right: -15rem;
   background-color: transparent;
   border: none;
