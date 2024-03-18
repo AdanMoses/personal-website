@@ -14,9 +14,9 @@ import {
   Subtitle,
   ImgWrap,
   BtnWrap,
-  Overlay,
-  Form,
 } from "./InfoElements";
+import ContactForm from "../ContactForm/index";
+import Overlay from "../Overlay";
 
 const InfoSection = ({
   lightBg,
@@ -120,21 +120,7 @@ const InfoSection = ({
       {isOverlayOpen && (
         <Overlay>
           <CloseButton onClick={() => setIsOverlayOpen(false)}><FaTimesCircle /></CloseButton>
-          <Form>
-            <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <label>
-              Email:
-              <input type="text" name="email" />
-            </label>
-            <label>
-              Message:
-              <textarea name="message" />
-            </label>
-            <InputButton type="submit" value="Submit" />
-          </Form>
+          <ContactForm />
         </Overlay>
       )}
     </>

@@ -88,6 +88,6 @@ export const homeObjFive = {
   dark: true,
   primary: true,
   darkText: false,
-  // contactForm: true,
+  contactForm: true,
   noButton: true,
 };
