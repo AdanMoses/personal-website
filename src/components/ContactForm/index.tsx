@@ -18,7 +18,7 @@ const ContactForm = () => {
 			return
 		}
 
-		// 👇 A nice little track to get all the form values as an object
+		// 👇 A nice little trick to get all the form values as an object
 		const form = e.target as HTMLFormElement
 		const formValues = Object.fromEntries(new FormData(form).entries())
     console.log(formValues)
@@ -29,6 +29,7 @@ const ContactForm = () => {
       console.log("fetching")
 			await fetch('/api/contact', {
 				method: 'POST',
+        cache: "force-cache",
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(formValues),
 			}).then((response) => {

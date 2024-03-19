@@ -20,11 +20,11 @@ const mg = mailgun.client({
 export async function POST(request: NextRequest) {
 	// console.log("POST")
 	// Get the form data from the request body
-	console.log(request)
-	// const { name, email, message } = await request.json()
+	// console.log(request.body.json())
+	const { name, email, message } = await request.json()
 
 	// Put together the email text
-	// const text = ['From: ' + name + '<' + email + '>\n', message].join('\n')
+	const text = ['From: ' + name + '<' + email + '>\n', message].join('\n')
 
 	try {
 		// Send the email using Mailgun
